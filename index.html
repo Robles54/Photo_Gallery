@@ -1,0 +1,271 @@
+<html>
+<head>
+    <title>My Photo Gallery</title>
+    <!-- Include bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Define a custom class for the gallery container */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+
+        /* Define a custom class for the gallery item */
+        .gallery-item {
+            flex: 0 0 25%; /* Set the initial width to 25% */
+            max-width: 25%; /* Set the maximum width to 25% */
+            padding: 10px; /* Add some padding around the image */
+        }
+
+        /* Define a custom class for the gallery image */
+        .gallery-image {
+            width: 100%; /* Set the width to 100% of the parent */
+            height: auto; /* Set the height to auto to preserve aspect ratio */
+            transition: transform 0.3s; /* Adds a transition effect for the transform property */
+        }
+
+        /* Define a custom class for the gallery image hover effect */
+        .gallery-image:hover {
+            transform: scale(1.1); /* Scale up the image by 10% on hover */
+        }
+
+        /* Use media queries to adjust the gallery item width for different screen sizes */
+        @media (max-width: 992px) {
+            .gallery-item {
+                flex: 0 0 33.33%;
+                max-width: 33.33%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .gallery-item {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Use bootstrap navbar component for the app header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Christopher's Photo Gallery App</a>
+        <a class="navbar-brand" href="https://christopherasc22.github.io/OfficialWebsite/">My Main Website</a>
+    </nav>
+
+    <!-- Use a custom div element for the gallery container -->
+    <div class="gallery">
+        <!-- Use bootstrap card component for each gallery item -->
+        <div class="gallery-item card">
+            <img src="images/IMG_1.JPG" alt="Statue that is located at the front of Central Park." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Central Park</h5>
+                <p class="card-text">This photo was taken at the front of Central Park at Columbus Circle. I took this photo prior to an college related interview. Photo taken on October 10, 2022.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_2.JPG" alt="Building that is located on Broad Street." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Broad Street</h5>
+                <p class="card-text">This photo was taken at Broad Street and Exchange Place. This is a block that I go to regularly for my Extracurricular program, SEO Scholars. Photo taken on October 20, 2022.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_3.jpg" alt="Photo of Jersey City from St. Peters University." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Jersey City</h5>
+                <p class="card-text">This is a photo of Jersey City from St. Peters University. I visited campus during my Junior Year with my high school. Photo taken on April 29, 2022</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_4.jpg" alt="Fireworks taken from my door step during the holiday of July 4th." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Sunset Park</h5>
+                <p class="card-text">During July 4th of 2022, I was greated with the pleasant surprise of fireworks from front of my house.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_5.jpg" alt="Upon entry to Port Authority Bus Terminal." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Port Authority/Lincoln Tunnel</h5>
+                <p class="card-text">I took this photo from a NJ Transit Bus returning from visiting family. Photo taken on July 10, 2022.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_6.jpg" alt="Photo of 2 building located around Hudson Yards, close proximity to Jarvis Center." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Hudson Yards</h5>
+                <p class="card-text">One of my many hobbies is city exploration. One of the many places where I went included Hudson Yards. Photo taken on September 30, 2022.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_7.jpg" alt="Photo taken from a roofside faceing Lower East Side's Chinatown and the East Broadway Station served by the MTA's F train." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Lower East Side</h5>
+                <p class="card-text">I took this photo from the roofside during an event hosted by SEO Scholars. Photo taken on October 14, 2022.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_9.jpg" alt="This photo was taken on Rector Street and Exchange Place." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Rector Street</h5>
+                <p class="card-text">This is a common location that I see traveling to a extracurricular program. Photo taken on October 18, 2022.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_8.jpg" alt="Second Photo taken from a roofside facing the Lower East Side. Instead this photo is facing the Manhattan Bridge Side." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Lower East Side</h5>
+                <p class="card-text">This is another photo I took during the same event. However the photo is facing the Manhattan Bridge.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_10.jpg" alt="Photo of Broad Exchange, close to famous Stock Exchange building on Wall Street" class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Wall Street</h5>
+                <p class="card-text">This photo was a part of my City Exploration. Lower Manhattan has always peaked my curiosity. Photo taken on October 18, 2022.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_11.jpg" alt="Photo of Broad Street during the evening." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Broad Street</h5>
+                <p class="card-text">I took this photo after leaving a session of my extracurricular. Photo taken on November 3, 2022.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_12.jpg" alt="Another photo of Broad Street during the evening." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Broad Street</h5>
+                <p class="card-text">This is another photo I took Broad Street during the evening. A true testament of the city that never sleeps. Photo taken on November 3, 2022.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_13.jpg" alt="Photo of Wall Street during the evening." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Wall Street</h5>
+                <p class="card-text">Yet another testament of the city that never sleeps. Photo taken on November 3, 2022.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_15.jpg" alt="This is a painting I created after school." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Carroll Gardens</h5>
+                <p class="card-text">This is a painting I created alongside a Mentee after school. Photo taken on November 9, 2022.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_16.jpg" alt="This is a photo of Exchange Place during the evening." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Exchange Place</h5>
+                <p class="card-text">This was a photo that I took throughout the evening. Photo taken on November 17, 2022.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_17.jpg" alt="A Christmas Tree in front of New York Stock Exchange." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">New York Stock Exchange</h5>
+                <p class="card-text">Most of Manhattan started to feel the Christmas Vibes early on. Photo taken on December 1, 2022.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_18.jpg" alt="The New York Stock Exchange in the Christmas Colors of Red and Green." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">New York Stock Exchange</h5>
+                <p class="card-text">Manhattan takes Christmas rather seriously. The New York Stock Exchange is full of the Jolly Colors!</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_19.jpg" alt="The interior of the office on Broad St and Exchange Place." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Exchange Place</h5>
+                <p class="card-text">The interior of the office in Exchange Place had a Christmas spirt of their own. Photo taken on December 1, 2022.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_20.jpg" alt="Photo of Trinity Church on Wall Street." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Wall Street</h5>
+                <p class="card-text">This is a photo of Trinity Church on Wall Street. The location of this church is unique, given that it's in the middle of skyscrapers.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_22.jpg" alt="Manhattan Skyline and the East River from Bush Terminal." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Bush Terminal</h5>
+                <p class="card-text">I wanted to take a photo of the Manhattan skyline and the park gave the perfect opportunity to do just that. Photo taken on January 9, 2023.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_23.jpg" alt="Photo taken in Flatiron, Manhattan; East of Madison Square Park." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Flatiron</h5>
+                <p class="card-text">During my many moments of City Exploration, I took a photo in Flatiron, Manhattan on Park Ave, east of Madison Square Park. Photo taken on Febuary 18, 2023.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_25.jpg" alt="Photo taken at Franklin & Marshall College." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Lancaster</h5>
+                <p class="card-text">I went on a college tour to Franklin & Marshall College in Pennsylvania and got to walk around Campus. I took a photo of the drastic change in scenery. Photo taken on Febuary 21, 2023.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_24.jpg" alt="Photo taken in Flatiron, Manhattan; West of Madison Square Park." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Flatiron</h5>
+                <p class="card-text">During my many moments of City Exploration, I took a photo in Flatiron, Manhattan on Fifth Ave headed to Broadway, west of Madison Square Park. Photo taken on Febuary 18, 2023.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_26.jpg" alt="Photo of me playing an arcade game with my Senior year sweater on." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Villa Roma</h5>
+                <p class="card-text">This was one of the many activities that I did. This is photo my friend took of me playing one of the many arcade games during my senior trip to Villa Roma Resort. Photo taken on March 3, 2023.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_27.jpg" alt="Photo of my friend after participating in Paintball." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Villa Roma</h5>
+                <p class="card-text">This is a photo of my friend Christopher Vazquez after playing Paintball. Both of us got shot during this fun activity, was it worth it? Yes. Photo taken March 4, 2023.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_28.jpg" alt="Photo taken at Rector Street taken during the evening." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Rector Street</h5>
+                <p class="card-text">I took this photo during an evening on my way to go back home. Photo taken on March 15, 2023.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_29.jpg" alt="Photo taken from The Vessel located at 34 Street - Hudson Yards." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">The Vessel - Hudson Yards</h5>
+                <p class="card-text">I took this photo from the Vessel while exploring the Hudson Yards area. Photo taken on March 18, 2023.</p>
+            </div>
+        </div>
+        <div class="gallery-item card">
+            <img src="images/IMG_31.jpg" alt="Photo of Ramen from Japan Village." class="gallery-image card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Japan Village</h5>
+                <p class="card-text">My friends took me out to celebrate my 18th birthday. This included eating Ramen for the first time! Photo taken on April 8, 2023</p>
+            </div>
+        </div>
+        <!-- Add more gallery items as needed -->
+    </div>
+
+    <!-- Include bootstrap CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
